@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+      <title>myPortfolio &mdash; Windows Clone</title>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="images/favicon.png" rel="shortcut icon" />
+  </head>
+
+  <body class="desktop wallpaper">
+    <ul class="icon-grid">
+      <li>
+        <a href="#" title="Computer" class="btn btn-computer" role="button">
+          <br> PC
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Trash" data-toggle="modal" data-target="#myTrash" class="btn btn-trash" role="button">
+          <br> Trash
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Projects Folder" data-toggle="modal" data-target="#myFolder" class="btn btn-folder" role="button">
+          <br> Projects
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Facebook" data-toggle="modal" data-target="#" class="btn btn-facebook" role="button">
+          <br> Facebook
+        </a>
+      </li>
+      <li>
+        <a href="#" title="Twitter" data-toggle="modal" data-target="#" class="btn btn-twitter" role="button">
+          <br> Twitter
+        </a>
+      </li>
+    </ul>
+    <!-- Modals -->
+    <div class="modal animated fadeInUp" id="myFolder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close btn btn-close" data-dismiss="modal" aria-hidden="true"></button>
+            <button type="button" class="close btn btn-maximize" data-dismiss="modal" aria-hidden="true">
+            </button>
+            <button type="button" class="close btn btn-minimize" data-dismiss="modal" aria-hidden="true">
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              Projects
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div style="height: 450px"></div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /#myFolder -->
+	
+    <div class="modal animated fadeInUp" id="myTrash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close btn btn-close" data-dismiss="modal" aria-hidden="true"></button>
+            <button type="button" class="close btn btn-maximize" data-dismiss="modal" aria-hidden="true">
+            </button>
+            <button type="button" class="close btn btn-minimize" data-dismiss="modal" aria-hidden="true">
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              Trash
+            </h4>
+          </div>
+          <div class="modal-body">
+            <h5>Miscellaneous crap</h5>
+            <hr>
+            <div style="height: 300px"></div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /#myTrash -->
+    <header class="wallpaper-logo" role="banner">
+      <img src="images/banner-logo.png" class="img-responsive center-block" alt="" /><br />
+      <div class="alert alert-danger alert-dismissible fade in" role="alert"> 
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> 
+        <strong>NOTE:</strong> A work in progress... I figured I'd put something here instead of leaving a blank screen. <br> However, I may change the layout because this was just an idea I was testing out.
+      </div>
+    </header>
+   <div style="height: 168px;"></div>   
+    <nav class="navbar navbar-taskbar navbar-fixed-bottom" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-windows fa-lg"></span>
+          </button>
+          <a href="#" class="navbar-brand" title="#">
+            ...
+          </a>
+        </div><!-- /.navbar-header -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown dropup">
+              <a href="#" class="dropdown-toggle btn start-btn btn-sm" data-toggle="dropdown" title="Start" role="button">
+                <i class="fa fa-windows"></i>
+              </a>
+              <ul class="dropdown-menu start-menu">
+                <div class="col-md-6 left-col">
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">...</a></li>
+                </div>
+                <div class="col-md-6 right-col">
+                  <li><a href="#">Curts</a></li>
+                  <li><a href="#">Documents</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Pictures</a></li>
+                  <li><a href="#">Music</a></li>
+                </div>
+              </ul>
+            </li>
+          </ul><!-- /.nav .navbar-nav .navbar-right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown dropup">
+              <a href="#" title="Show hidden icons" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-caret-up"></i>
+              </a>
+              <ul class="dropdown-menu hidden-icons">
+                <li><a href="#">...</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">...</a></li>
+              </ul>
+            </li>
+            <li><a href="#volume" title="Volume"><i id="volume" class="fa fa-volume-up"></i></a></li>
+            <li><a href="#" title="Notifications"><i class="fa fa-flag"></i></a></li>
+            <li><a href="#"></a></li>
+            <li class="navbar-text" title="Tuesday, September 06, 2016">6:39 AM</li>
+          </ul>
+        </div><!-- /.collapse .navbar-collapse -->
+    </nav><!-- .navbar .navbar-taskbar .navbar-static-bottom -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+﻿//
+//  Mixin Functions
+//---------------------
+
+.linear-gradient(@position, @bottom-color, @top-color) {
+  background: linear-gradient(@position, @bottom-color, @top-color);
+  background: -o-linear-gradient(@position, @bottom-color, @top-color);
+  background: -ms-linear-gradient(@position, @bottom-color, @top-color);
+  background: -moz-linear-gradient(@position, @bottom-color, @top-color);
+  background: -webkit-linear-gradient(@position, @bottom-color, @top-color);
+}
+
+.transition(@property, @speed) {
+  transition: @property @speed;
+  -o-transition: @property @speed;
+  -ms-transition: @property @speed;
+  -moz-transition: @property @speed;
+  -webkit-transition: @property @speed;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.navbar-vertical-align(@element-height) {
+  margin-top: ((@navbar-height - @element-height) / 2);
+  margin-bottom: ((@navbar-height - @element-height) / 2);
+}
